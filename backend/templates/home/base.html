@@ -19,9 +19,97 @@
 
 <body>
     <div class="container">
+        <header>
+            <nav>
+                <img src="{% static 'images/image.svg' %}" alt="" class="logo">
+                <div class="kategoriSearch">
+                    <div class="kategori">
+                        <img src="{% static 'images/Frame.svg' %}" alt="">
+                        <p>Kategory</p>
+                    </div>
+                    <div class="searchDiv">
+                        <input type="text">
+                        <div class="searchIcon">
+                            <i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="users">
+                    <div class="accaunt">
+                        <i class="fa-solid fa-user" style="color: #000000;"></i>
+                        <span>Kirish</span>
+                    </div>
+                    <div class="accaunt">
+                        <i class="fa-sharp fa-solid fa-cart-shopping" style="color: #000000;"></i>
+                        <span>Savat</span>
+                        <p>0</p>
+                    </div>
+                </div>
+        
+            </nav>
+            <ul class="listes">
+                <li class="item">Parfum</li>
+                <li class="item">Aromat</li>
+                <li class="item">Mushkiambar</li>
+                <li class="item">Womens's Collection</li>
+                <li class="item">Love Potion</li>
+                <li class="item">Men's Collection</li>
+                <li class="item">Essense&Co.</li>
+                <li class="item">Venture</li>
+                <li class="item">The One</li>
+                <li class="item">Soul</li>
+                <li class="item">Sun 360</li>
+            </ul>
+        </header>
+        
+
         {% block content %}
         
         {% endblock content %}
+
+        <footer>
+
+            <div class="footerDiv">
+                <p>Bog'lanish<div class="hr"></div></p>
+        
+                <div class="footerInfo">
+                    <span>+998943614656</span>
+                    <span>Asadbek Abdullayev</span>
+                </div>
+            </div>
+        
+            <div class="footerDiv">
+                <p>Kompaniya<div class="hr"></div></p>
+                <div class="footerInfo">
+                    <span>Biz haqimizda </span>
+                    <span>Bizning hizmatlar</span>
+                    <span>Bizning hizmatlar</span>
+                    <span>Xavfsizlik</span>
+                </div>
+            </div>
+        
+            <div class="footerDiv">
+                <p>Yordam 24/7<div class="hr"></div></p>
+                <div class="footerInfo">
+                    <span>FAQ</span>
+                    <span>Telegram yordam</span>
+                    <span>returns</span>
+                    <span>+998943614656</span>
+                    <span>To'lov usullari</span>
+                </div>
+            </div>
+        
+            <div class="footerDiv">
+                <p>Bog'lanish<div class="hr"></div></p>
+                <div class="footerIcon">
+                    <i class="fa-brands fa-telegram"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+            </div>
+        </footer>
+
     </div>
 </body>
 
