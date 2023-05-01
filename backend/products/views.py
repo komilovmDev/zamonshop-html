@@ -9,9 +9,6 @@ from .models import Category, Subcategory, Product
 from .serializers import CategorySerializer, SubcategorySerializer, ProductSerializer
 
 
-def index(request):
-    return render(request, 'home/index.html')
-
 
 def products(request):
     return render(request, "products/products.html")
