@@ -1,0 +1,154 @@
+.container {
+    width: 1200px;
+    margin: 0 auto;
+
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 15px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.kategoriSearch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.kategori {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    padding: 6px 6.27px 6px 6px;
+    background-color: var(--add);
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+
+}
+
+
+.kategori p {
+    font-weight: 000;
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff;
+    letter-spacing: 1.5px;
+}
+
+.searchDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 480px;
+    height: 37px;
+    padding-left: 5px;
+    border: 1px solid #BDBDBD;
+    border-radius: 5px;
+}
+
+.searchDiv input {
+    width: 90%;
+    height: 80%;
+    border: none;
+    outline: none;
+
+}
+
+.searchIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 35px;
+    background: #f0f0f0d3;
+    border-radius: 0px 5px 5px 0px;
+    cursor: pointer;
+}
+
+.users {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.accaunt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: all 0.4s ease;
+}
+
+.accaunt:hover {
+    background-color: #00000011;
+    transition: all 0.4s ease;
+}
+
+.accaunt p {
+    padding: 2px 5px;
+    background-color: var(--add);
+    color: white;
+    border-radius: 2px;
+    font-size: 14px;
+}
+
+.listes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+}
+
+.item {
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #616161;
+    transition: all 0.4s ease;
+    display: inline-block;
+    position: relative;
+
+}
+
+.item:hover {
+    transition: all 0.4s ease;
+}
+
+.item::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: var(--add);
+    transform-origin: bottom right;
+    transition: transform 0.5s ease-out;
+
+}
+
+.item:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
