@@ -1,7 +1,9 @@
 from django.shortcuts import render
+from django.views.generic import TemplateView
 
 from rest_framework import generics
 from rest_framework import viewsets
+
 
 from .models import Category, Subcategory, Product
 from .serializers import CategorySerializer, SubcategorySerializer, ProductSerializer
@@ -10,6 +12,9 @@ from .serializers import CategorySerializer, SubcategorySerializer, ProductSeria
 def index(request):
     return render(request, 'home/index.html')
 
+
+def products(request):
+    return render(request, "products/products.html")
 
 class CategoryViewSet(viewsets.ModelViewSet):
     queryset = Category.objects.all()
@@ -36,16 +41,6 @@ class SubcategoryDetail(generics.RetrieveUpdateDestroyAPIView):
     serializer_class = SubcategorySerializer
 
 
-class ProductList(viewsets.ModelViewSet):
-    queryset = Product.objects.all()
-    serializer_class = ProductSerializer
-
-    def get_queryset(self):
-        queryset = Product.objects.all().order_by('-id')
-        cat_id = self.request.query_params.get('cat_id', None)
-        if cat_id is not None:
-            queryset = queryset.filter(category_id=cat_id)
-        return queryset
 
 
 class ProductDetail(generics.RetrieveUpdateDestroyAPIView):
