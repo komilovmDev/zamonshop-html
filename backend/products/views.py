@@ -13,6 +13,7 @@ from .serializers import CategorySerializer, SubcategorySerializer, ProductSeria
 def products(request):
     return render(request, "products/products.html")
 
+
 class CategoryViewSet(viewsets.ModelViewSet):
     queryset = Category.objects.all()
     serializer_class = CategorySerializer
