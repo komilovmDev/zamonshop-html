@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 {% load static %}
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,9 +13,10 @@
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="{% static 'style/footer.css' %}">
-    <link rel="stylesheet" href="{% static 'style/header.css' %}">    
+    <link rel="stylesheet" href="{% static 'style/header.css' %}">
     <link rel="stylesheet" href="{% static 'style/style.css' %}">
     <link rel="stylesheet" href="{% static 'style/savat.css' %}">
+    <link rel="stylesheet" href="{% static 'style/order.css' %}">
     <title>Zamonshop</title>
 </head>
 
@@ -48,7 +50,7 @@
                         </div>
                     </a>
                 </div>
-        
+
             </nav>
             <ul class="listes">
                 <li class="item">Parfum</li>
@@ -63,8 +65,87 @@
                 <li class="item">Soul</li>
                 <li class="item">Sun 360</li>
             </ul>
+            <div class="kategoriDiv">
+                <div class="kategoriListes">
+
+                    <ul class="kategoriList">
+                        <li class="kategoriItem" data-target="Home">Home</li>
+                        <li class="kategoriItem" data-target="Settings">Setting</li>
+                        <li class="kategoriItem" data-target="about">About</li>
+                    </ul>
+
+                    <section id="Home">
+
+                        <div class="items">
+
+                            <div class="">
+                                <p>aafeardok</p>
+                                <p>aafeardok</p>
+                                <p>aafeardok</p>
+                                <p>aafeardok</p>
+                                <p>aafeardok</p>
+                                <p>aafeardok</p>
+                                <p>aafeardok</p>
+                                <p>aafeardok</p>
+                                <p>aafeardok</p>
+                                <p>aafeardok</p>
+                                <p>aafeardok</p>
+                                <p>aafeardok</p>
+                                <p>aafeardok</p>
+                                <p>aafeardok</p>
+                                <p>aafeardok</p>
+                                <p>aafeardok</p>
+                                <p>aafeardok</p>
+                                <p>aafeardok</p>
+                            </div>
+
+
+
+                        </div>
+
+
+                    </section>
+
+                    <section id="Settings">
+                        <h1> Settings </h1>
+                    </section>
+
+                    <section id="about">
+                        <h1> About </h1>
+                    </section>
+
+                </div>
+            </div>
+            <script>
+                const kategoriBtn = document.querySelector(".kategori")
+                const kategori = document.querySelector(".kategoriDiv")
+
+                kategoriBtn.onclick = function () {
+                    kategori.classList.toggle('addKategori')
+                }
+
+                const liArray = document.querySelectorAll('li')
+
+                let currentPage = ''
+
+                liArray.forEach(li => {
+                    li.onmouseover = (event) => {
+                        const target = li.getAttribute('data-target')
+                        showPage(target)
+                    }
+                })
+
+                function showPage(target) {
+                    console.log(target);
+                    document.getElementById(currentPage)?.classList.remove('visible')
+                    document.getElementById(target).classList.add('visible')
+                    currentPage = target
+                }
+
+                showPage('Home')
+            </script>
         </header>
-        
+
         {% block content %}
 
         {% endblock content %}
@@ -72,16 +153,20 @@
         <footer>
 
             <div class="footerDiv">
-                <p>Bog'lanish<div class="hr"></div></p>
-        
+                <p>Bog'lanish
+                <div class="hr"></div>
+                </p>
+
                 <div class="footerInfo">
                     <span>+998943614656</span>
                     <span>Asadbek Abdullayev</span>
                 </div>
             </div>
-        
+
             <div class="footerDiv">
-                <p>Kompaniya<div class="hr"></div></p>
+                <p>Kompaniya
+                <div class="hr"></div>
+                </p>
                 <div class="footerInfo">
                     <span>Biz haqimizda </span>
                     <span>Bizning hizmatlar</span>
@@ -89,9 +174,11 @@
                     <span>Xavfsizlik</span>
                 </div>
             </div>
-        
+
             <div class="footerDiv">
-                <p>Yordam 24/7<div class="hr"></div></p>
+                <p>Yordam 24/7
+                <div class="hr"></div>
+                </p>
                 <div class="footerInfo">
                     <span>FAQ</span>
                     <span>Telegram yordam</span>
@@ -100,9 +187,11 @@
                     <span>To'lov usullari</span>
                 </div>
             </div>
-        
+
             <div class="footerDiv">
-                <p>Bog'lanish<div class="hr"></div></p>
+                <p>Bog'lanish
+                <div class="hr"></div>
+                </p>
                 <div class="footerIcon">
                     <i class="fa-brands fa-telegram"></i>
                     <i class="fa-brands fa-youtube"></i>
