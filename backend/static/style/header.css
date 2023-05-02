@@ -14,14 +14,16 @@ header {
 
 }
 
-nav {
+.nav1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     z-index: 999;
 }
-
+.nav2{
+    display: none;
+}
 .kategoriSearch {
     display: flex;
     justify-content: center;
@@ -222,4 +224,47 @@ section {
 
 .visible {
     display: block;
+}
+
+@media screen and (max-width: 414px) and (min-width: 360px) {
+    .container{
+        width: 100%;
+    }
+    .nav1{
+        display: none;
+    }
+    .nav2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 15px;
+    }
+    .mobilNav1Div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        width: 100%;
+    }
+    .mobilNav1Div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+    }
+    .searchDiv{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 310px;
+        height: 37px;
+        padding-left: 5px;
+        border: 1px solid #BDBDBD;
+        border-radius: 5px;
+    }
+    .listes{
+        display: none;
+    }
 }
