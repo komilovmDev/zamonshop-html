@@ -1,0 +1,18 @@
+{% extends 'home/base.html' %}
+
+{% load static %}
+{% block content %}
+
+<div class="userProfil">
+    <div class="userProfilLeft">
+        <a href="{% url 'users:users' %}"><button><i class="fa-solid fa-user"></i><span>Персональная данные</span></button></a>
+        <a href="{% url 'users:myproduct' %}"><button class="activeProfil"><i class="fa-solid fa-box"></i><span>Мои заказы</span></button></a>
+        <a href=""><button ><i class="fa-solid fa-truck-fast"></i><span>дрес доставки</span></button></a>
+        <a href=""><button><i class="fa-solid fa-right-from-bracket fa-rotate-180" style="color: red; background: rgba(255, 0, 0, 0.168);"></i><span>Выйти из профиля</span></button></a>
+    </div>
+    <div class="myproducts">
+        
+    </div>
+</div>
+
+{% endblock content %}
