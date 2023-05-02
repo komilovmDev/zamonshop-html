@@ -58,20 +58,6 @@
     flex-direction: column;
     gap: 20px;
 }
-.zakazBtns a{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 278px;
-    height: 44px;
-    background: #FFA600;
-    border-radius: 8px;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: #FFFFFF;
-    text-decoration: none!important;
-}
 
 .zakazBtns p a{
     display: flex;
@@ -86,6 +72,25 @@
     line-height: 24px;
     color: #FFFFFF;
 }
+.zakazBtns p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 278px;
+    height: 44px;
+    background: #FFA600;
+    border-radius: 8px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    transition: all 0.5s ease;
+}
+.zakazBtns p:active{
+    scale: 60%;
+    transition: all 0.5s ease;
+}
+
 
 .karzinkaProduct {
     display: flex;
