@@ -7,3 +7,4 @@ django-mptt
 djangorestframework_simplejwt
 twilio
 requests
+environs
