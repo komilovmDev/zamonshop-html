@@ -10,7 +10,7 @@
     display: flex;
     flex-direction: column;
     align-items: start;
-    border: 1px solid #333;
+    border: 1px solid #3333335d;
     padding: 15px;
     border-radius: 8px;
 }
@@ -55,7 +55,7 @@
 
 .userProfil .userInfos {
     width: 90%;
-    border: 1px solid black;
+    border: 1px solid #3333335d;
     padding: 15px;
     border-radius: 8px;
     display: flex;
@@ -111,8 +111,46 @@
 
 .userProfil .myproducts {
     width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
+.userProfil .myproducts .myproducts_title {
+    font-size: 22px;
+    font-weight: 600;
+}
 
+.userProfil .myproducts .myproductsCat {
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.397);
+    display: flex;
+    align-items: flex-start;
+    justify-content: start;
+    gap: 50px;
+
+}
+
+.userProfil .myproducts .myproductsCat li {
+    cursor: pointer;
+}
+
+.userProfil .myproducts .myproducts_products {
+
+}
+
+.userProfil .myproducts .myproducts_products .myproducts_products_product {
+
+}
+
+.userProfil .myproducts .myproducts_products .myproducts_products_product img {
+    width: 100px;
+}
+
+.userProfil .myproducts .myproductsCat .active {
+    padding-bottom: 3px;
+    color: red;
+    border-bottom: 3px solid red;
+}
 
 /* ======================================== Adress ================================================== */ 
