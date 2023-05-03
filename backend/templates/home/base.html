@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="{% static 'style/style.css' %}">
     <link rel="stylesheet" href="{% static 'style/savat.css' %}">
     <link rel="stylesheet" href="{% static 'style/order.css' %}">
+    <link rel="stylesheet" href="{% static 'style/product.css' %}">
     <title>Zamonshop</title>
 </head>
 
@@ -151,7 +152,7 @@
                 </div>
             </div>
             <script>
-                const kategoriBtn = document.querySelector(".kategori")
+                const kategoriBtn = document.querySelector(".nav1 .kategoriSearch .kategori")
                 const kategori = document.querySelector(".kategoriDiv")
 
                 kategoriBtn.onclick = function () {
@@ -179,7 +180,24 @@
                 showPage('Home')
             </script>
         </header>
-
+        <div class="mobilResponsive">
+            <div class="mobilResponsiveDivs">
+                <img src="{% static 'images/home.svg' %}" alt="">
+                <p>Главная</p>
+            </div>
+            <div class="mobilResponsiveDivs">
+                <img src="{% static 'images/home.svg' %}" alt="">
+                <p>Избранное</p>
+            </div>
+            <div class="mobilResponsiveDivs">
+                <img src="{% static 'images/home.svg' %}" alt="">
+                <p>Корзина</p>
+            </div>
+            <div class="mobilResponsiveDivs">
+                <img src="{% static 'images/home.svg' %}" alt="">
+                <p>Asadbek</p>
+            </div>
+        </div>
         {% block content %}
 
         {% endblock content %}
