@@ -173,3 +173,52 @@
 }
 
 /* ======================================== Adress ================================================== */ 
+
+.userProfil .userAdress {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: 1px solid #3333335d;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.userProfil .userAdress .userAdressTItle {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.userProfil .userAdress .addAdress {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.userProfil .userAdress .addAdress .addAdressChil {
+    display: flex;
+    flex-direction: column;
+}
+
+.userProfil .userAdress .addAdress .addAdressChil select {
+    padding: 8px;
+}
+
+.userProfil .userAdress .addAdress .addAdressChil input {
+    height: 35px;
+    padding-left: 5px;
+}
+
+.userProfil .userAdress .userAdressSave {
+    width: 80px;
+    height: 30px;
+    background-color: rgba(209, 34, 34, 0.956);
+    border: none;
+    color: white;
+    border-radius: 3px; 
+}
+
+.userProfil .userAdress .userAdressSave:active {
+    transform: scale(0.98);
+}

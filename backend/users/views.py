@@ -121,6 +121,9 @@ def profil(request):
 def myproduct(request):
     return render(request , 'users/myproduct.html')
 
+def mylocation(request):
+    return render(request , 'users/mylocation.html')
+
 
 
 

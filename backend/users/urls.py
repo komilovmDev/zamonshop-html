@@ -30,6 +30,7 @@ urlpatterns = [
     path('login/', views.login_otp_view, name='login_otp_view'),
     path('', views.profil , name="users"),
     path('myproduct/', views.myproduct, name="myproduct"),
-
+    path('mylocation/' , views.mylocation , name="mylocation"),
+    
 ]
 
