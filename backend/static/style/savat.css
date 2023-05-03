@@ -143,3 +143,22 @@
     overflow-y: scroll;
     gap: 30px;
 }
+@media screen and (max-width: 414px) and (min-width: 360px) {
+    .Savat{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+    }
+    .karzinkaProducts{
+        width: 100%;
+        gap: 40px;
+    }
+    
+    .karzinkaProduct{
+        width: 100%;
+    }
+    .cunterPrice{
+        gap: 5px;
+    }
+}
