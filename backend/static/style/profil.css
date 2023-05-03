@@ -128,7 +128,6 @@
     align-items: flex-start;
     justify-content: start;
     gap: 50px;
-
 }
 
 .userProfil .myproducts .myproductsCat li {
@@ -136,15 +135,35 @@
 }
 
 .userProfil .myproducts .myproducts_products {
-
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    padding-bottom: 50px;
 }
 
 .userProfil .myproducts .myproducts_products .myproducts_products_product {
-
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 80px;
 }
 
 .userProfil .myproducts .myproducts_products .myproducts_products_product img {
     width: 100px;
+}
+
+.userProfil .myproducts .myproducts_products .myproducts_products_product .myproducts_products_product_productName {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.userProfil .myproducts .myproducts_products .myproducts_products_product .myproducts_products_product_Shtuk {
+    font-size: 18px;
+}
+
+.userProfil .myproducts .myproducts_products .myproducts_products_product .myproducts_products_product_Price {
+    font-weight: 500;
+    font-size: 20px;
 }
 
 .userProfil .myproducts .myproductsCat .active {
