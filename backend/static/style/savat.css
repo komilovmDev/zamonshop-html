@@ -161,4 +161,15 @@
     .cunterPrice{
         gap: 5px;
     }
+    .cunterPrice h5{
+        font-size: 14px;
+
+    }
+    .counter{
+
+        scale: 90%;
+    }
+    .imgName p{
+        width: 100%;
+    }
 }
