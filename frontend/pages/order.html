@@ -16,19 +16,19 @@
     <div class="Orders">
         <h1>1. Как вы хотите получить заказ?</h1>
         <div class="zakaz">
-
-            <div class="zakazBtn">
-                <img src="../images/Vector2.svg" alt="">
+    
+            <div class="zakazBtn const1">
+                <img src="{% static 'images/Vector2.svg' %}" alt="">
                 <p>Самовызов</p>
             </div>
-            <div class="zakazBtn">
-                <img src="../images/boxtick.svg" alt="">
+            <div class="zakazBtn const2">
+                <img src="{% static 'images/boxtick.svg' %}" alt="">
                 <p>Доставка</p>
             </div>
         </div>
         <h1>2. Укажите адрес доставки</h1>
         <div class="gorod">
-
+    
             <div class="selects">
                 <p>Город</p>
                 <select aria-placeholder="Выберите город" name="" id="">
@@ -62,7 +62,27 @@
                 <input type="text" placeholder="Qo'shimcha telefon">
             </div>
         </div>
+        <p class="addZakazBtn">Buyurtma Qilish</p>
     </div>
+    
+    <script>
+        
+    const zakazBtn1 = document.querySelector('.const1')
+    const zakazBtn2 = document.querySelector('.const2')
+    
+    zakazBtn1.onclick = function(){
+        zakazBtn1.classList.add('zakazBtnAdd')
+        zakazBtn2.classList.remove('zakazBtnAdd')
+        
+    }
+    
+    zakazBtn2.onclick = function(){
+        zakazBtn1.classList.remove('zakazBtnAdd')
+        zakazBtn2.classList.add('zakazBtnAdd')
+    }
+    
+    
+    </script>
 </body>
 
 </html>
