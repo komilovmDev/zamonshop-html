@@ -127,6 +127,9 @@ p {
 }
 
 .korish {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 2px 4px;
     background-color: var(--add);
     color: white;
@@ -216,4 +219,7 @@ p {
     .name{
         width: 100%;
     }
-}
+    .korish p{
+        display: none;
+    }
+}   
