@@ -377,24 +377,31 @@
         font-size: 12px;
         font-weight: 500;
     }
+
     .userProfil .userAdress {
         width: 100%;
     }
+
     .userProfil .userAdress .userAdressTItle {
         font-size: 14px;
     }
+
     .userProfil .userAdress .addAdress {
         grid-template-columns: repeat(1, 1fr);
     }
+
     .userProfil .userAdress .addAdress .addAdressChil label {
         font-size: 12px;
     }
+
     .userProfil .userAdress .addAdress .addAdressChil select {
         font-size: 12px;
     }
+
     .userProfil .userAdress .addAdress .addAdressChil input {
         font-size: 14px;
     }
+
     .userProfil .userAdress .userAdressSave {
         width: 100%;
     }
