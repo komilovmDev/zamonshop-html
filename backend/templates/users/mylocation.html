@@ -9,7 +9,7 @@
             <a href="{% url 'users:mylocation' %}"><button class="activeProfil"><i class="fa-solid fa-truck-fast"></i><span>дрес доставки</span></button></a>
             <a href=""><button><i class="fa-solid fa-right-from-bracket fa-rotate-180" style="color: red; background: rgba(255, 0, 0, 0.168);"></i><span>Выйти из профиля</span></button></a>
         </div>
-        <div class="userAdress">
+        <form class="userAdress">
             <span class="userAdressTItle">Адрес доставки</span>
             <div class="addAdress">
                 <div class="addAdressChil">
@@ -51,7 +51,7 @@
                     <input type="text">
                 </div>
             </div>
-            <button class="userAdressSave">Save</button>
-        </div>
+            <button type="submit" class="userAdressSave">Save</button>
+        </form>
     </div>
 {% endblock content %}
