@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="{% static 'style/style.css' %}">
     <link rel="stylesheet" href="{% static 'style/savat.css' %}">
     <link rel="stylesheet" href="{% static 'style/order.css' %}">
+
     <link rel="stylesheet" href="{% static 'style/profil.css' %}">
     <link rel="stylesheet" href="{% static 'style/product.css' %}">
     <title>Zamonshop</title>
@@ -25,7 +26,41 @@
 <body>
     <div class="container">
         <header>
-            <nav>
+
+            <nav class="nav2">
+                <div class="mobilNav1Div">
+                    <a href="{% url 'home:home' %}"><img src="{% static 'images/image.svg' %}" alt="" class="logo"></a>
+                 <div class="users">
+                    <div class="accaunt">
+                        <i class="fa-solid fa-user" style="color: #000000;"></i>
+                        <span>Kirish</span>
+                    </div>
+                    <a href="{% url 'orders:savat' %}">
+                        <div class="accaunt">
+                            <i class="fa-sharp fa-solid fa-cart-shopping" style="color: #000000;"></i>
+                            <span>Savat</span>
+                            <p>0</p>
+                        </div>
+                    </a>
+                </div>
+                </div>
+               <div class="mobilNav1Div">
+                <div class="kategoriSearch">
+                    <div class="kategori">
+                        <img src="{% static 'images/Frame.svg' %}" alt="">
+                    </div>
+                    <div class="searchDiv">
+                        <input type="text">
+                        <div class="searchIcon">
+                            <i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i>
+                        </div>
+                    </div>
+                </div>
+               </div>
+
+            </nav>
+
+            <nav class="nav1">
                 <a href="{% url 'home:home' %}"><img src="{% static 'images/image.svg' %}" alt="" class="logo"></a>
                 <div class="kategoriSearch">
                     <div class="kategori">
@@ -119,7 +154,7 @@
                 </div>
             </div>
             <script>
-                const kategoriBtn = document.querySelector(".kategori")
+                const kategoriBtn = document.querySelector(".nav1 .kategoriSearch .kategori")
                 const kategori = document.querySelector(".kategoriDiv")
 
                 kategoriBtn.onclick = function () {
@@ -143,16 +178,33 @@
                     document.getElementById(target).classList.add('visible')
                     currentPage = target
                 }
-
+     
                 showPage('Home')
             </script>
         </header>
-
+        <div class="mobilResponsive">
+            <div class="mobilResponsiveDivs">
+                <img src="{% static 'images/home.svg' %}" alt="">
+                <p>Главная</p>
+            </div>
+            <div class="mobilResponsiveDivs">
+                <img src="{% static 'images/home.svg' %}" alt="">
+                <p>Избранное</p>
+            </div>
+            <div class="mobilResponsiveDivs">
+                <img src="{% static 'images/home.svg' %}" alt="">
+                <p>Корзина</p>
+            </div>
+            <div class="mobilResponsiveDivs">
+                <img src="{% static 'images/home.svg' %}" alt="">
+                <p>Asadbek</p>
+            </div>
+        </div>
         {% block content %}
 
         {% endblock content %}
 
-        <footer>
+        <footer class="footer">
 
             <div class="footerDiv">
                 <p>Bog'lanish
@@ -177,6 +229,61 @@
                 </div>
             </div>
 
+
+            <div class="footerDiv">
+                <p>Yordam 24/7
+                <div class="hr"></div>
+                </p>
+                <div class="footerInfo">
+                    <span>FAQ</span>
+                    <span>Telegram yordam</span>
+                    <span>returns</span>
+                    <span>+998943614656</span>
+                    <span>To'lov usullari</span>
+                </div>
+            </div>
+
+            <div class="footerDiv">
+                <p>Bog'lanish
+                <div class="hr"></div>
+                </p>
+                <div class="footerIcon">
+                    <i class="fa-brands fa-telegram"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+
+
+    </footer>
+    
+    <footer class="footer2">
+        <div class="footerDiv2">
+            <div class="footerDiv">
+                <p>Bog'lanish
+                <div class="hr"></div>
+                </p>
+
+                <div class="footerInfo">
+                    <span>+998943614656</span>
+                    <span>Asadbek Abdullayev</span>
+                </div>
+            </div>
+
+            <div class="footerDiv">
+                <p>Kompaniya
+                <div class="hr"></div>
+                </p>
+                <div class="footerInfo">
+                    <span>Biz haqimizda </span>
+                    <span>Bizning hizmatlar</span>
+                    <span>Bizning hizmatlar</span>
+                    <span>Xavfsizlik</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="footerDiv2">
             <div class="footerDiv">
                 <p>Yordam 24/7
                 <div class="hr"></div>
@@ -201,8 +308,9 @@
                     <i class="fa-brands fa-linkedin-in"></i>
                 </div>
             </div>
-        </footer>
+        </div>
 
+    </footer>
     </div>
 </body>
 

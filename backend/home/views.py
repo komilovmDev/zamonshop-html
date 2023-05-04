@@ -1,7 +1,17 @@
 from django.shortcuts import render
 
+from products.models import Category, Subcategory
+
 # Create your views here.
 
 def index(request):
-    return render(request, 'home/index.html')
+
+    categories = Subcategory.objects.filter(children=None)
+
+    context = {
+        "categories": categories
+    }
+
+    return render(request, 'home/index.html', context)
+    
     

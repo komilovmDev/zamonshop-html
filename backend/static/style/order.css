@@ -100,3 +100,35 @@
     scale: 80%;
     transition: all 0.5s ease;
 }
+
+@media screen and (max-width: 414px) and (min-width: 360px) {
+    .Orders {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 20px;
+        margin: 50px auto;
+        width: 100%;
+        padding: 3px;
+    }
+    .zakaz{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    .gorod{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .addZakazBtn{
+        width: 100%;
+    }
+}

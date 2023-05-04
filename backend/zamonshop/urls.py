@@ -27,9 +27,9 @@ urlpatterns = [
     path('', include('home.urls', namespace="home")),
     path('users/', include('users.urls', namespace="users")),
     path('orders/', include('orders.urls', namespace="orders")),
+    path('product/', include('products.urls', namespace="products")),
 
-]
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 urlpatterns += [re_path(r'^media/(?P<path>.*)$', serve, {'document_root': settings.MEDIA_ROOT, }), ]
-
