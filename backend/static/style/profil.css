@@ -329,7 +329,7 @@
     .userProfil .myproducts .myproductsCat::after {
         content: "";
         position: absolute;
-        width: 150%;
+        width: 125%;
         height: 1px;
         background-color: black;
         left: 0;
@@ -337,7 +337,7 @@
     }
 
     .userProfil .myproducts .myproductsCat .myproductsCatLI {
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .userProfil .myproducts .myproductsCat::-webkit-scrollbar {
@@ -350,5 +350,52 @@
 
     .userProfil .myproducts .myproductsCat::-webkit-scrollbar-thumb {
         background-color: transparent;
+    }
+
+    .userProfil .myproducts .myproducts_products {
+        gap: 20px;
+    }
+
+    .userProfil .myproducts .myproducts_products .myproducts_products_product {
+        gap: 20px;
+    }
+
+    .userProfil .myproducts .myproducts_products .myproducts_products_product img {
+        width: 40px;
+    }
+
+    .userProfil .myproducts .myproducts_products .myproducts_products_product .myproducts_products_product_productName {
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+    .userProfil .myproducts .myproducts_products .myproducts_products_product .myproducts_products_product_Shtuk {
+        font-size: 12px;
+    }
+
+    .userProfil .myproducts .myproducts_products .myproducts_products_product .myproducts_products_product_Price {
+        font-size: 12px;
+        font-weight: 500;
+    }
+    .userProfil .userAdress {
+        width: 100%;
+    }
+    .userProfil .userAdress .userAdressTItle {
+        font-size: 14px;
+    }
+    .userProfil .userAdress .addAdress {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .userProfil .userAdress .addAdress .addAdressChil label {
+        font-size: 12px;
+    }
+    .userProfil .userAdress .addAdress .addAdressChil select {
+        font-size: 12px;
+    }
+    .userProfil .userAdress .addAdress .addAdressChil input {
+        font-size: 14px;
+    }
+    .userProfil .userAdress .userAdressSave {
+        width: 100%;
     }
 }
